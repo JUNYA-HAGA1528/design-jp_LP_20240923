@@ -1,0 +1,239 @@
+@use "global" as *;
+
+.mv{
+    text-align: center;
+}
+
+.mv__images{
+    position: relative;
+}
+
+.mv__features{
+    position: absolute;
+    bottom: -7%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(360);
+    height: rem(118);
+    margin: 0 auto;
+    @include mq(md) {
+        width: rem(685);
+        height: rem(238);
+    }
+}
+
+
+.mv__subtitle {
+    margin-top: rem(54);
+	display: inline-block;
+	position: relative;
+	color: $white;
+	font-size: rem(26.41);
+	font-weight: $medium;
+    line-height: calc(65.6/50);
+    letter-spacing: 0.05em;
+	text-align: center;
+    @include mq(md) {
+        margin-top: rem(80);
+        font-size: rem(50);
+    }
+}
+
+.mv__subtitle::before,
+.mv__subtitle::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 2px;
+	height: 95%;
+	background: $white;
+}
+
+.mv__subtitle::before {
+	left: -5%;
+	transform: translateY(-50%) rotate(-30deg);
+}
+
+.mv__subtitle::after {
+	right: -5%;
+	transform: translateY(-50%) rotate(30deg);
+}
+
+.mv__content{
+    background-color:$blue ;
+    padding: 0 rem(27) rem(50);
+}
+
+.mv__wrapper{
+    background-color: $white;
+    border-radius: rem(8);
+    margin-top: rem(30);
+    padding: rem(8) 0 rem(16) ;
+    position: relative;
+    @include mq(md) {
+        margin-top: rem(46);
+        padding: rem(17) 0 rem(28.8) ;
+    }
+}
+
+.mv__explanation{
+    position: absolute;
+    top:-8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(340);
+    height: rem(32);
+    margin: 0 auto;
+    @include mq(md) {
+        width: rem(630);
+        height: rem(64);
+    }
+}
+
+.mv__price{
+    width: 92%;
+    margin: 0 auto;
+}
+
+.mv__link{
+    position: relative;
+}
+
+.mv__comment{
+    position: absolute;
+    top: -5%;
+    left: 0px;
+    width: rem(53);
+    height: rem(53);
+    z-index: 10;
+    @include mq(md) {
+        left: -10px;
+        width: rem(106);
+        height: rem(106);
+    }
+}
+
+.mv__buttons {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え（必要なら） */
+    text-align: center; /* インライン要素のテキスト中央揃え */
+}
+
+.mv__button  {
+    position: relative;
+    background-color: $pink;
+    color: $white;
+    margin-top: rem(8);
+    width: rem(340);
+    height: rem(51);
+    font-size: rem(17.81);
+    line-height: calc(34.7/15.61);
+    font-weight: 500;
+    z-index: 1;
+    transition: 0.4s;
+    overflow: hidden;
+    border-radius: rem(50);
+    display: flex;
+    gap: 0 rem(2);
+    align-items: center;
+    justify-content: center;
+    padding-right: rem(10);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    @include mq(md) {
+        margin-top: rem(12);
+        padding-right: rem(20);
+        gap: 0 rem(6);
+        width: rem(630);
+        height: rem(102);
+        font-size: rem(35);
+        line-height: calc(41.2/22);
+        font-weight: $bold;
+    }
+}
+
+.mv__button span::after {
+	background-image: url(../images/common/mv-button-arrow.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 51%;
+    right: 24px;
+    width: rem(14);
+	height: rem(14);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md) {
+        width: rem(36);
+        height: rem(20);
+        right: 36px;
+    }
+}
+
+.mv__button img {
+    width: rem(20);
+    height: rem(20);
+    @include mq(md) {
+        width: rem(37);
+        height: rem(34);
+    }
+}
+
+.mv__button:hover{
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.mv__contact {
+	display: inline-block;
+	position: relative;
+	color: $black;
+	font-size: rem(16.21);
+	font-weight: $bold;
+    line-height: calc(34/26);
+    letter-spacing: 0.05em;
+	text-align: center;
+    @include mq(md) {
+        margin-top: rem(-10);
+        font-size: rem(32);
+        line-height: calc(41.4/32);
+    }
+}
+
+.mv__contact::before,
+.mv__contact::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 2px;
+	height: 95%;
+	background: $black;
+}
+
+.mv__contact::before {
+	left: -5%;
+	transform: translateY(-50%) rotate(-30deg);
+}
+
+.mv__contact::after {
+	right: -5%;
+	transform: translateY(-50%) rotate(30deg);
+}
+
+.mv__content{
+    background-color:$blue ;
+    padding: 0 rem(15) rem(30);
+    @include mq(md) {
+        padding: 0 rem(27) rem(50);
+    }
+}

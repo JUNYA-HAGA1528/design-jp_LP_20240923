@@ -12,8 +12,8 @@ $mediaquerys: (
 @if $startFrom == sp {
   //スマホファースト
   $breakpoints: (
-    sm: 600,
-    md: 768,
+    sm: 390,
+    md: 500,
     lg: 1024,
     xl: 1440,
   );

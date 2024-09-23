@@ -18,6 +18,23 @@
     <meta property="og:description" content="" />
     <!-- ファビコン -->
     <link rel="”icon”" href="" />
+
+    <!-- font -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'jgv3eso',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
@@ -25,6 +42,44 @@
     <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-</body>
+    <div class="all-body">
+        
+        
+        
+        <div class="mv">
+            <div class="mv__images">
+                <figure class="mv__img">
+                    <img src="./assets/images/common/mv-bg.jpg" alt="品川スキンクリニックの「プチシワ取り」なら" loading="lazy">
+                </figure>
+                <figure class="mv__features">
+                    <img src="./assets/images/common/mv-treature.png" alt="プチシワ取りの特徴" loading="lazy">
+                </figure>
+            </div>
+            <div class="mv__content">
+                <h3 class="mv__subtitle">まずはお試し！</h3>
+                <div class="mv__wrapper">
+                    <figure class="mv__explanation">
+                        <img src="./assets/images/common/mv-explanation.png" alt="mv__explanation" loading="lazy">
+                    </figure>
+                    <figure class="mv__price">
+                        <img src="./assets/images/common/mv-price.png" alt="プチシワ取り注射" loading="lazy">
+                    </figure>
+                    <div class="mv__buttons">
+                        <a href="https://shinagawa-skin.com/rsv/?_ebx=2acpwyigcld.1714277690.7wtpsdc&shinagawa-com__zc=3.66a33e6c25c0210014750a23.75.0.0.0.&shinagawa-com__zc_us=66a726164e6f390016b5bb22.0.3.1722230294413&shinagawa-com__zc_store=%7B%22cv%22%3Anull%7D&shinagawa-com__zc_exp=1722237825207&apikey=shinagawa-com" target="_blank" class="mv__link">
+                            <img src="./assets/images/common/mv-button-comment.png" class="mv__comment" alt="簡単20秒" loading="lazy">
+                            <p class="mv__contact">お気軽にお問合せください</p>
+                            <button class="mv__button">
+                                <img src="./assets/images/common/mv-calender.png" alt="ボタンカレンダーのアイコン" loading="lazy">
+                                <span>無料カウンセリング予約</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+
+
+    </div>
+</body>
 </html>
