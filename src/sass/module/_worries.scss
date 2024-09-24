@@ -1,0 +1,246 @@
+@use "global" as *;
+
+.worries{
+    background-color:#EDF5F8 ;
+    text-align: center;
+    @include mq(md) {
+    }
+}
+
+.worries__trouble{
+    margin-top: rem(23.11);
+    font-size: rem(26);
+    font-weight: $medium;
+    line-height: calc(36/26);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        margin-top: rem(41);
+        font-size: rem(30);
+        font-weight: $bold;
+        line-height: calc(40/30);
+    }
+}
+
+.worries__color{
+    color: $blue;
+}
+
+
+
+
+
+.worries__inner{
+    max-width: rem(750);
+    margin: 0 auto;
+    @include mq(md) {
+        padding: rem(0) rem(30);
+    }
+}
+
+.worries__list{
+    margin-top: rem(10);
+}
+
+.worries__worsening{
+    font-size: rem(26);
+    font-weight: $medium;
+    line-height: calc(36/26);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(30);
+        font-weight: $bold;
+        line-height: calc(40/30);
+    }
+}
+
+.worries__worsening{
+    margin-top: rem(20);
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+
+
+.worries__solution{
+    background-color: #F8F4EB;
+}
+
+.worries__title-img{
+    margin-top: rem(-20);
+    @include mq(md) {
+        margin-top: rem(0);
+    }
+}
+
+.worries__worsening-case{
+    width: rem(360);
+    height: rem(99.33);
+    margin: 0 auto ;
+    @include mq(md) {
+        width: rem(690);
+        height: rem(197);
+    }
+}
+
+
+
+.worries__list{
+    padding: 0 rem(15);
+    text-align: left;
+    @include mq(md) {
+        padding: 0 rem(30);
+    }
+}
+
+.worries__item{
+    display: flex;
+    align-items: flex-start;
+    gap: 0 rem(6);
+    background-color: $white;
+    padding: rem(15) rem(10);
+    @include mq(md) {
+        padding: rem(25) rem(10) rem(25) rem(21);
+    }
+}
+
+.worries__item + .worries__item{
+    margin-top: rem(10);
+}
+
+.worries__check{
+    width: rem(20);
+    height: rem(16);
+    margin-top: rem(4);
+    @include mq(md) {
+        margin-top: rem(14);
+    }
+}
+
+.worries__text{
+    font-size: rem(18);
+    font-weight: $medium;
+    line-height: calc(26/18);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(26);
+        font-weight: $bold;
+        line-height: 1.5;
+    }
+}
+
+.worries__text-color{
+    color: #B99637;
+}
+
+.worries__effect{
+    margin-top: rem(40);
+    position: relative;
+    overflow: hidden;
+}
+
+.worries__effect-woman{
+    background-image: url('../images/common/about-img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: 62px;
+    left: calc(50% - min(55%, rem(800)));
+    width: rem(240);
+    height: rem(240);
+    z-index: 1;
+}
+
+.worries__improvement{
+    margin-top: rem(47);
+    font-size: rem(26);
+    font-weight: $medium;
+    line-height: calc(36/26);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        margin-top: rem(50);
+        font-size: rem(30);
+        font-weight: $bold;
+        line-height: calc(40/30);
+    }
+}
+
+.worries__improvement-color{
+    color: $blue;
+}
+
+.worries__improvement-img{
+    width: rem(360);
+    height: rem(200);
+    margin: rem(20) auto 0;
+    @include mq(md) {
+        width: rem(500);
+        height: rem(277);
+        margin: rem(40) auto 0;
+    }
+}
+
+.worries__improvement-img img {
+    aspect-ratio:360/200 ;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md) {
+        aspect-ratio:500/277 ;
+    }
+}
+
+.worries__improvement-text,
+.worries__improvement-text-second{
+    text-align: left;
+    margin-top: rem(15);
+    padding: 0 rem(15);
+    font-size: rem(15);
+    font-weight: $medium;
+    line-height: calc(30/15);
+    @include mq(md) {
+        margin-top: rem(20);
+        padding: 0 rem(30);
+        font-weight: $bold;
+        letter-spacing: 0.01em;
+    }
+}
+
+.worries__improvement-img-second{
+    width: rem(390);
+    height: rem(220);
+    margin: rem(20) auto 0;
+    @include mq(md) {
+        width: rem(500);
+        height: rem(283);
+        margin: rem(40) auto 0;
+    }
+}
+
+.worries__improvement-img-second img {
+    aspect-ratio:390/220 ;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include mq(md) {
+        aspect-ratio:500/283 ;
+    }
+}
+
+.worries__improvement-remarks{
+    text-align: left;
+    margin-top: rem(20);
+    padding: 0 rem(15) rem(30);
+    font-size: rem(10.5);
+    font-weight: $medium;
+    line-height: calc(18/10.5);
+    letter-spacing: 0.05em;
+    @include mq(md) {
+        padding: 0 rem(30) rem(50);
+        font-size: rem(12);
+        font-weight: $bold;
+        line-height: calc(20/12);
+    }
+}
