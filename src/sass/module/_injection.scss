@@ -1,0 +1,152 @@
+@use "global" as *;
+
+.injection{
+    background-color: #EDF5F8;
+    text-align: center;
+    padding: rem(0) rem(15);
+    position: relative;
+    @include mq(md) {
+        padding: rem(0) rem(30);
+    }
+}
+
+.injection__icon{
+    position: absolute;
+    top: 12%;
+    right: 14px;
+    width: rem(80);
+    height: rem(150);
+    z-index: 100;
+    @include mq(md) {
+        top: 14.5%;
+        right: 45px;    
+        width: rem(100);
+        height: rem(187);
+    }
+}
+
+.injection__price-title{
+    font-size: rem(26);
+    font-weight: $regular;
+    line-height: calc(36/26);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(30);
+        font-weight: $bold;
+        line-height: calc(36/30);
+
+    }
+}
+
+.injection__price-subtitle {
+    text-align: center; /* テキストを中央に揃える */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(15);
+    font-weight: $regular;
+    letter-spacing: 0.05em;
+    background-color: #B99637;
+    color: $white;
+    width: rem(180);
+    height: rem(36);
+    margin: rem(4) auto 0; /* 要素自体を中央に配置 */
+    border-radius: rem(4);
+    @include mq(md) {
+        width: rem(300);
+        height: rem(50);
+        margin: rem(18) auto 0; /* 要素自体を中央に配置 */
+        font-size: rem(26);
+        font-weight: $bold;
+    }
+}
+
+.injection__price-color{
+    color: $blue;
+}
+
+
+.injection__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+.injection__table th, .injection__table td {
+    border: 1px solid #C2C2C2;
+    padding: rem(10) rem(10) rem(10) rem(15);
+    text-align: left;
+    vertical-align: middle;
+    @include mq(md) {
+        padding: rem(12) rem(10) rem(12) rem(15);
+    }
+}
+
+.injection__table th {
+    text-align: center;
+    background-color: $blue;
+    color: $white;
+    font-size: rem(15);
+    font-weight: $regular;
+    line-height: calc(20/15);
+    letter-spacing: 0.05em;
+    width: 40%;
+    @include mq(md) {
+        font-weight: $bold;
+    }
+}
+
+.injection__table td {
+    background-color: #f7fbfd;
+    font-size: rem(15);
+    font-weight: $regular;
+    letter-spacing: 0.05em;
+    line-height: calc(26/15);
+    @include mq(md) {
+        font-weight: $bold;
+    }
+}
+
+.td{
+    display: inline-block;
+    margin-top: rem(10);
+}
+
+.td::after {
+    content: "\f105"; /* アイコンのUnicodeを指定 */
+    font-family: "Font Awesome 5 Free"; /* Font Awesomeのフォントファミリーを指定 */
+    font-weight: 900; /* アイコンが表示されない場合は、この指定が必要な場合があります */
+    margin-left: 15px; /* アイコンとテキストの間に余白を設定 */
+}
+
+.td:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+
+.injection__table span {
+    color: $blue;
+}
+
+.injection__table a {
+    color: $blue;
+    text-decoration: none;
+}
+
+.injection__remarks{
+    margin-top: rem(20);
+    text-align: left;
+    font-size: rem(10.5);
+    font-weight: $regular;
+    line-height: calc(18/10.5);
+    letter-spacing: 0.05em;
+    @include mq(md) {
+        font-size: rem(12);
+        font-weight: $bold;
+        line-height: calc(20/12);
+    }
+}

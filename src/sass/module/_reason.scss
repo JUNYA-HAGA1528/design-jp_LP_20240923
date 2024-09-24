@@ -1,0 +1,155 @@
+@use "global" as *;
+
+.reason{
+    background-color: #EDF5F8;
+    text-align: center;
+    padding: rem(30) rem(15);
+    @include mq(md) {
+        padding: rem(52) rem(30);
+    }
+}
+
+.reason__title{
+    font-size: rem(26);
+    font-weight: $medium;
+    line-height: calc(36/26);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(30);
+        font-weight: $bold;
+        line-height: calc(40/30);
+    }
+}
+
+.reason__title-color{
+    color: $blue;
+}
+
+.reason__text{
+    margin-top: rem(20);
+    text-align: left;
+    font-size: rem(15);
+    font-weight: $medium;
+    line-height: 2;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        margin-top: rem(32);
+        font-weight: $bold;
+    }
+}
+
+.reason__list{
+    width: rem(359);
+    height: rem(355);
+    margin: 0 auto;
+    @include mq(md) {
+        width: rem(690);
+        height: rem(286);
+        margin: rem(20) auto 0;
+    }
+}
+
+.reason__part{
+    margin-top: rem(40);
+    background-color: #fff;
+    @include mq(md) {
+        margin-top: rem(50);
+    }
+}
+
+.reason__price{
+    text-align: center;
+    background-color: $white;
+    margin-top: rem(30);
+    padding: rem(30) rem(20);
+    @include mq(md) {
+        margin-top: rem(50);
+        padding: rem(52) rem(30) rem(50);
+    }
+}
+
+.reason__price-title{
+    color: $blue;
+    font-size: rem(26);
+    font-weight: $regular;
+    line-height: calc(36/26);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(30);
+        font-weight: $bold;
+        line-height: calc(36/30);
+
+    }
+}
+
+.reason__price-subtitle {
+    text-align: center; /* テキストを中央に揃える */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(15);
+    font-weight: $regular;
+    letter-spacing: 0.05em;
+    background-color: #B99637;
+    color: $white;
+    width: rem(180);
+    height: rem(36);
+    margin: rem(4) auto 0; /* 要素自体を中央に配置 */
+    border-radius: rem(4);
+    @include mq(md) {
+        width: rem(300);
+        height: rem(50);
+        margin: rem(22) auto 0; /* 要素自体を中央に配置 */
+        font-size: rem(26);
+        font-weight: $bold;
+    }
+}
+
+.reason__items{
+    margin-top: rem(10);
+    @include mq(md) {
+        margin-top: rem(20);
+    }
+}
+
+.reason__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px $black;
+    @include mq(md) {
+        padding: 0 rem(20);
+    }
+}
+
+.reason__item span {
+    font-size: rem(12);
+    @include mq(md) {
+        font-size: rem(20);
+    }
+}
+
+.reason__item dt {
+    font-size: rem(15);
+    font-weight: $regular;
+    line-height: calc(56/15);
+    letter-spacing: 0.05em;
+    @include mq(md) {
+        font-size: rem(20);
+        font-weight: $bold;
+        line-height: calc(56/200);
+    }
+}
+
+.reason__item dd {
+    color: $blue;
+    font-size: rem(20);
+    font-weight: $regular;
+    line-height: calc(56/20);
+    letter-spacing: 0.05em;
+    @include mq(md) {
+        font-size: rem(30);
+        font-weight: $bold;
+        line-height: calc(56/30);
+    }
+}

@@ -1,0 +1,151 @@
+@use "global" as *;
+
+.flow{
+    margin-top: rem(30.2);
+    text-align: center;
+    padding: 0 rem(15);
+    @include mq(md) {
+        margin-top: rem(48.92);
+        padding: 0 rem(30);
+    }
+}
+
+.flow__title{
+    font-size: rem(26);
+    font-weight: $regular;
+    line-height: calc(36/26);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(30);
+        font-weight: $bold;
+        line-height: calc(36/30);
+    }
+}
+
+.flow__title-color{
+    color: $blue;
+}
+
+
+
+.flow__YouTube {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+
+.flow__YouTube iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.flow__YouTube{
+    margin-top: rem(21);
+    @include mq(md) {
+        margin-top: rem(30);
+    }
+}
+
+.flow__item{
+    margin-top: rem(37.78);
+    @include mq(md) {
+        margin-top: rem(55.28);
+    }
+}
+
+.flow__en{
+    color: #B99637;
+    font-size: rem(20);
+    font-weight: $regular;
+    line-height: calc(34/20);
+    letter-spacing: 0.1em;
+    @include mq(md) {
+        font-weight: $bold;
+    }
+}
+
+.flow__jp{
+    font-size: rem(26);
+    font-weight: $regular;
+    line-height: calc(36/26);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(30);
+        font-weight: $bold;
+        line-height: calc(36/30);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.flow__content{
+    position: relative;
+    z-index: 10;
+    margin-top: rem(47);
+    @include mq(md) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+
+.flow__img {
+    @include mq(md) {
+        position: absolute;
+        top: 40%;
+        width: 52.2%;
+        left: 0%;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+}
+
+.flow__img img {
+    aspect-ratio: 360/200;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flow__wrapper{
+    position: relative;
+    width: 100%;
+    background-color: $blue;
+    padding: rem(54) 2.55% rem(40) ;
+    @include mq(md) {
+        width: 56.35%;
+        padding: rem(20) rem(4) rem(20) rem(66);
+        min-height: rem(200);
+        margin-left: auto; /* これで右寄せになります */
+    }
+}
+
+.flow__text{
+    color: $white;
+    font-size: rem(16);
+    font-weight: $semiBold;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: rem(0) rem(15) rem(20);
+    @include mq(md) {
+        font-size: rem(15);
+        line-height: 2;
+        max-width: 89.5%;
+        margin: auto;
+        padding: 0;
+    }
+}
