@@ -12,7 +12,7 @@
 
 .attempt__title{
     font-size: rem(26);
-    font-weight: $regular;
+    font-weight: $medium;
     line-height: calc(36/26);
     letter-spacing: 0.01em;
     @include mq(md) {
@@ -29,10 +29,11 @@
 .attempt__title-main{
     color: #B99637;
     font-size: rem(40);
-    font-weight: $bold;
+    font-weight: $medium;
     letter-spacing: 0.01em;
     margin-top: rem(-10);
     @include mq(md) {
+        font-weight: $bold;
         margin-top: rem(-16);
         font-size: rem(70);
     }
