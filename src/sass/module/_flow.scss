@@ -94,11 +94,12 @@
 .flow__content{
     position: relative;
     z-index: 10;
-    margin-top: rem(47);
+    margin-top: rem(20);
     @include mq(md) {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        margin-top: rem(47);
     }
 }
 
@@ -125,25 +126,28 @@
     position: relative;
     width: 100%;
     background-color: $blue;
-    padding: rem(54) 2.55% rem(40) ;
+    width: calc(100% + rem(30));
+    margin: rem(-50) auto auto rem(-15);
+    padding: rem(70) rem(15) rem(30) ;
+    z-index: -1;
     @include mq(md) {
         width: 56.35%;
         padding: rem(20) rem(4) rem(20) rem(66);
         min-height: rem(200);
-        margin-left: auto; /* これで右寄せになります */
+        margin:0 0 0 auto; /* これで右寄せになります */
     }
 }
 
 .flow__text{
     color: $white;
-    font-size: rem(16);
-    font-weight: $semiBold;
+    font-size: rem(15);
+    font-weight: $regular;
     letter-spacing: 0.01em;
+    line-height: 2;
     text-align: left;
-    padding: rem(0) rem(15) rem(20);
     @include mq(md) {
         font-size: rem(15);
-        line-height: 2;
+        font-weight: $bold;
         max-width: 89.5%;
         margin: auto;
         padding: 0;

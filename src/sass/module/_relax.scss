@@ -1,0 +1,29 @@
+
+
+@use "global" as *;
+
+.relax{
+    margin-top: rem(30);
+    text-align: center;
+    padding: 0 rem(15);
+    @include mq(md) {
+        margin-top: rem(80);
+        padding: 0 rem(30);
+    }
+}
+
+.relax__title{
+    font-size: rem(26);
+    font-weight: $regular;
+    line-height: calc(36/26);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(30);
+        font-weight: $bold;
+        line-height: calc(36/30);
+    }
+}
+
+.relax__title-color{
+    color: $blue;
+}

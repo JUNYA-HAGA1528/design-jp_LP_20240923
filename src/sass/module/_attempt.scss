@@ -1,0 +1,26 @@
+@use "global" as *;
+
+
+.attempt{
+    text-align: center;
+    padding: 0 rem(15);
+    @include mq(md) {
+        padding: 0 rem(30);
+    }
+}
+
+.attempt__title{
+    font-size: rem(26);
+    font-weight: $regular;
+    line-height: calc(36/26);
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(30);
+        font-weight: $bold;
+        line-height: calc(36/30);
+    }
+}
+
+.attempt__title-color{
+    color: $blue;
+}

@@ -2,6 +2,10 @@
 
 .common{
     text-align: center;
+    margin-top: rem(30);
+    @include mq(md) {
+        margin-top: rem(50);
+    }
 }
 
 .common__content{
@@ -232,4 +236,6 @@
 	right: -5%;
 	transform: translateY(-50%) rotate(30deg);
 }
+
+
 

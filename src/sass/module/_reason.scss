@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .reason{
-    background-color: #EDF5F8;
+    background-color: $lightBlue;
     text-align: center;
     padding: rem(30) rem(15);
     @include mq(md) {
