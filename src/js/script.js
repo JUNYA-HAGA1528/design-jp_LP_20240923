@@ -22,6 +22,38 @@ jQuery(function ($) {
             $question.addClass('open');
         }
     });
-});
 
+
+
+    $(function() {
+        // 最初のタブとコンテンツを表示
+        $(".js-tab-info li:first").addClass("active");
+        $(".page-imformation__tab-cards li").hide(); // すべて非表示に
+        $(".page-imformation__tab-cards li:first").fadeIn(); // 最初のコンテンツを表示
+    
+        // タブをクリックしたときの処理
+        $(".js-tab-info li").on("click", function(e) {
+            e.preventDefault();  // リンクのデフォルト動作を無効にする
+            
+            // タブのactiveクラスを外してから、クリックされたタブにactiveを付与
+            $(".js-tab-info li").removeClass("active");
+            $(this).addClass("active");
+            
+            // クリックされたタブのインデックス番号を取得して、対応するコンテンツを表示
+            const index = $(this).index();
+            $(".page-imformation__tab-cards li").hide().eq(index).fadeIn(300); // クリックされたタブに対応するコンテンツを表示
+        });
+    
+        // ページ読み込み時にハッシュがあれば、そのタブを表示
+        var hash = location.hash;
+        if (hash.length) {
+            if (hash.match(/#info/)) {
+                // ハッシュがある場合、その番号に対応するタブとコンテンツを表示
+                var tabIndex = hash.replace("#info", "") - 1;
+                $(".js-tab-info li").removeClass("active").eq(tabIndex).addClass("active");
+                $(".page-imformation__tab-cards li").hide().eq(tabIndex).fadeIn();
+            }
+        }
+    });
+});
 });
