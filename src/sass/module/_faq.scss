@@ -3,12 +3,12 @@
 
 
 .faq{
-    margin-top: rem(30);
+    margin-top: rem(90);
     text-align: center;
     padding: 0 rem(15);
 	padding-bottom: rem(30);
     @include mq(md) {
-        margin-top: rem(80);
+        margin-top: rem(120);
         padding: 0 rem(30);
 		padding-bottom: rem(50);
     }

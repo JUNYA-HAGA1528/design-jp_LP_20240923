@@ -30,7 +30,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
                 $question.addClass('open');
             }
         });
-    });
+  
     
 
 
@@ -117,5 +117,30 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         mousewheel: true,
         keyboard: true,
     });
+
+
+    var relaxSwiper = new Swiper(".relax__swiper", {
+        cssMode: true, // CSSモードを有効
+        loop: true, // 無限ループ
+        slidesPerView: 1, // 1スライドずつ表示
+        spaceBetween: 30, // スライド間のスペース
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".relax-swiper-pagination", // ページネーションの要素を新しいクラスに変更
+          clickable: true, // ページネーションをクリック可能に
+        },
+        mousewheel: true, // マウスホイールで操作可能
+        keyboard: {
+          enabled: true, // キーボード操作を有効
+          onlyInViewport: true, // ビューポート内でのみ操作可能
+        },
+      });
+      
+  
+
+});
         
 });

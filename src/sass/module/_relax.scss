@@ -5,10 +5,8 @@
 .relax{
     margin-top: rem(30);
     text-align: center;
-    padding: 0 rem(15);
     @include mq(md) {
         margin-top: rem(80);
-        padding: 0 rem(30);
     }
 }
 
@@ -27,3 +25,90 @@
 .relax__title-color{
     color: $blue;
 }
+
+
+
+
+
+
+.relax__swiper-wrap{
+    text-align: center;
+    padding: 0 rem(30);
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}
+
+
+
+
+.p-relax {
+	background: #FFEEEF;
+	padding: clamp(30px, 6vw, 60px) 4.26%;
+}
+
+.p-relax_title img {
+	max-width: 95%;
+}
+
+.relax__swiper-wrap {
+	position: relative;
+	max-width: 640px;
+	margin: 0 auto;
+	margin-top: 5.33%;
+}
+
+.relax__swiper-wrap .swiper-slide__body {
+	background: transparent;
+}
+
+.relax__swiper-wrap .title {
+    margin-top: rem(30);
+    background-color: $blue;
+    color: $white;
+	font-size: rem(15);
+    font-weight: $regular;
+    letter-spacing: 0.01em;
+    border-radius: rem(4);
+    width: 100%;
+    padding: rem(7) 0 rem(3);
+    @include mq(md) {
+        font-size: rem(26);
+        font-weight: $bold;
+    }
+}
+
+.relax__swiper-wrap .text {
+    margin-top: rem(6);
+    font-size: rem(15);
+    font-weight: $regular;
+    line-height: calc(2);
+    letter-spacing: 0.01em;
+    text-align: left;
+    @include mq(md) {
+        margin-top: rem(20);
+        font-weight: $bold;
+    }
+}
+
+.relax__swiper-wrap .swiper-button-prev,
+.relax__swiper-wrap .swiper-button-next {
+	top: clamp(28%, 13vh, 32%);
+	transform: translateY(-29%);
+}
+
+
+
+
+
+/* relax-swiper-paginationのデフォルトの色（点いていない丸）を灰色に設定 */
+.relax-swiper-pagination .swiper-pagination-bullet {
+    background-color: #E6E6E6; /* 灰色 */
+    opacity: 1; /* 完全に表示 */
+  }
+  
+  /* relax-swiper-paginationのアクティブなページネーション（点いている丸）の色を設定 */
+  .relax-swiper-pagination .swiper-pagination-bullet-active {
+    background-color: $blue; /* アクティブ時の色（例: 青色） */
+  }
+  

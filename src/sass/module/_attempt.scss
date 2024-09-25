@@ -4,9 +4,9 @@
 .attempt{
     background-color: $lightBlue;
     text-align: center;
-    padding: rem(30) rem(15) 0;
+    padding: rem(30) rem(15) ;
     @include mq(md) {
-        padding: rem(50) rem(30) 0;
+        padding: rem(50) rem(30) ;
     }
 }
 

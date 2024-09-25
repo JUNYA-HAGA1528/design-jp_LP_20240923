@@ -180,6 +180,7 @@
 .common__button img {
     width: rem(20);
     height: rem(20);
+    margin-top: rem(-5);
     @include mq(md) {
         width: rem(37);
         height: rem(34);
