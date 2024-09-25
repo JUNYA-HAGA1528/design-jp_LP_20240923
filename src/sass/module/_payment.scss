@@ -26,7 +26,10 @@
 
 
 .page-imformation__contents{
-  margin-top: rem(31.8);
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(31.8);
+  }
 }
 
 .page-imformation__tab {
@@ -37,8 +40,10 @@
   }
 
   .page-imformation__tab-label a {
-    display: inline-block;
-    color: #A7CBDE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  color: #A7CBDE;
     background: #EDF5F8;
     text-align: center;
     padding: rem(20) 0;
@@ -48,12 +53,14 @@
     position: relative;
     z-index: 1;
     width: 100%;
+    height: rem(60);
     @include mq("md") {
       font-size: rem(26);
-      padding: rem(15) 0;
+      padding: rem(17) 0 rem(13);
       display: flex;
       align-items: center;
       justify-content: center;
+      height: rem(66);
     }
   }
 

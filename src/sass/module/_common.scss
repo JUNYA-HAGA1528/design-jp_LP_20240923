@@ -7,29 +7,30 @@
 
 .common__content{
     background-color:$blue ;
-    padding: rem(10) rem(15) rem(30);
+    padding: rem(30) rem(15) rem(30);
     @include mq(md) {
-        padding: rem(20) rem(27) rem(50);
+        padding: rem(50) rem(27) rem(50);
     }
 }
 
 .common__title{
     width: rem(354);
-    height: rem(62);
+    height: rem(35);
     margin: 0 auto;
     @include mq(md) {
         width: rem(689);
-        height: rem(120);
+        height: rem(68);
     }
 }
 
 .common__yen{
     width: rem(300);
     height: rem(130);
-    margin: 0 auto;
+    margin: rem(15) auto 0;
     @include mq(md) {
         width: rem(500);
         height: rem(217);
+        margin: rem(20) auto 0;
     }
 }
 
@@ -71,7 +72,7 @@
 .common__wrapper{
     background-color: $white;
     border-radius: rem(8);
-    margin-top: rem(30);
+    margin-top: rem(20);
     padding: rem(8) 0 rem(16) ;
     position: relative;
     @include mq(md) {

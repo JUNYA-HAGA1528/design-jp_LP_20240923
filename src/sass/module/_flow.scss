@@ -46,7 +46,7 @@
 }
 
 .flow__YouTube{
-    margin-top: rem(21);
+    margin-top: rem(10);
     @include mq(md) {
         margin-top: rem(30);
     }
@@ -94,7 +94,7 @@
 .flow__content{
     position: relative;
     z-index: 10;
-    margin-top: rem(20);
+    margin-top: rem(10);
     @include mq(md) {
         display: flex;
         justify-content: flex-end;
@@ -125,10 +125,10 @@
 .flow__wrapper{
     position: relative;
     width: 100%;
-    background-color: $blue;
+    background-color: #EDF5F8;
     width: calc(100% + rem(30));
     margin: rem(-50) auto auto rem(-15);
-    padding: rem(70) rem(15) rem(30) ;
+    padding: rem(70) rem(15) rem(20) ;
     z-index: -1;
     @include mq(md) {
         width: 56.35%;
@@ -139,7 +139,7 @@
 }
 
 .flow__text{
-    color: $white;
+    color: $black;
     font-size: rem(15);
     font-weight: $regular;
     letter-spacing: 0.01em;

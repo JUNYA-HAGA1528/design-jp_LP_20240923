@@ -33,24 +33,23 @@
 
 
 
-
+.p-faq__items{
+	margin-top: rem(20);
+}
 
 .p-faq__item {
 	border-bottom: 1px solid #333;
-	padding: 4.3% 0;
+	padding: 2.3% 0;
 }
-
-
-
-
-
-
 
 .p-faq__q {
 	position: relative;
-	padding-left: 7%;
+	padding-left: 7.5%;
 	padding-right: 30px;
     text-align: left;
+	@include mq(md) {
+		padding-left: 6.5%;
+	}
 }
 
 .p-faq__q::before,
@@ -63,19 +62,35 @@
 .p-faq__q::before {
 	top: 50%;
 	right: 0;
-	width: 26px;
+	width: 20px;
 	font-size: clamp(18px, 2.3vw, 30px);
-	height: 4px;
+	height: 1.5px;
 	transform: translateY(-50%);
+	@include mq(md) {
+		top: 50%;
+		right: 0;
+		width: 26px;
+		font-size: clamp(18px, 2.3vw, 30px);
+		height: 4px;
+		transform: translateY(-50%);
+	}
 }
 
 .p-faq__q::after {
 	top: 50%;
-	right: 11px;
-	width: 4px;
-	height: 26px;
+	right: 9px;
+	width: 2px;
+	height: 20px;
 	transform: translateY(-50%);
 	transition: .2s;
+	@include mq(md) {
+		top: 50%;
+		right: 11px;
+		width: 4px;
+		height: 26px;
+		transform: translateY(-50%);
+		transition: .2s;
+	}
 }
 
 .p-faq__q.open::after {
@@ -84,22 +99,30 @@
 
 .p-faq__q p {
 	position: relative;
-    font-size: rem(20);
-	font-weight: $bold;
-    line-height: calc(30/20);
-    letter-spacing: 0.05em;
+    font-size: rem(18);
+	font-weight: $regular;
+    line-height: calc(26/18);
+    letter-spacing: 0.01em;
+	@include mq(md) {
+		font-size: rem(18);
+		font-weight: $bold;
+	}
 }
 
 .p-faq__q p::before {
 	content: "Q";
 	position: absolute;
-	top: 0;
-	left: -7%;
+	top: -0.3%;
+	left: -9%;
 	display: inline-block;
 	font-size: rem(20);
 	font-weight: $bold;
 	line-height: calc(25/20);
 	color: #B99637;
+	@include mq(md) {
+		left: -7%;
+		top: 0;
+	}
 }
 
 
@@ -115,23 +138,36 @@
 	padding: rem(17) rem(50);
 	padding-left: 9.5%;
 	border-radius: 5px;
-	margin-top: rem(30);
+	margin-top: rem(15);
 	display: none;
+	font-size: rem(15);
+	font-weight: $regular;
+	line-height: 2;
+	letter-spacing: 0.01em;
+	@include mq(md) {
+		font-weight: $bold;
+	}
 }
 
 .p-faq__a::before {
 	content: "A";
 	position: absolute;
-	top: 18%;
+	top: 8.5%;
 	left: 2.89%;
 	display: inline-block;
 	font-size: rem(20);
 	font-weight: $bold;
 	line-height: calc(25/20);
 	color: #81C5CA;
+	@include mq(md) {
+		top: 13%;
+	}
 }
 
 .p-faq__a.open {
 	display: block;
-	padding: rem(17) rem(50);
+	padding: rem(17) rem(15) rem(17) rem(38);
+	@include mq(md) {
+		padding: rem(17) rem(20) rem(17) rem(50);
+	}
 }

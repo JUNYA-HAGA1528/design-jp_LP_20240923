@@ -26,14 +26,14 @@
 }
 
 .reason__text{
-    margin-top: rem(20);
+    margin-top: rem(6);
     text-align: left;
     font-size: rem(15);
     font-weight: $medium;
     line-height: 2;
     letter-spacing: 0.01em;
     @include mq(md) {
-        margin-top: rem(32);
+        margin-top: rem(20);
         font-weight: $bold;
     }
 }
@@ -45,15 +45,15 @@
     @include mq(md) {
         width: rem(690);
         height: rem(286);
-        margin: rem(20) auto 0;
+        margin: rem(15) auto 0;
     }
 }
 
 .reason__part{
-    margin-top: rem(40);
+    margin-top: rem(50);
     background-color: #fff;
     @include mq(md) {
-        margin-top: rem(50);
+        margin-top: rem(30);
     }
 }
 

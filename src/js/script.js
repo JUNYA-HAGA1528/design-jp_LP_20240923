@@ -3,11 +3,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 
+    $(document).ready(function () {
+        // 初期状態で最初のアコーディオンを開く
+        var $firstQuestion = $('.p-faq__q').first();
+        var $firstAnswer = $firstQuestion.next('.p-faq__a');
+        
+        $firstQuestion.addClass('open');  // 最初の質問に open クラスを追加
+        $firstAnswer.addClass('open').show();  // 最初の回答を開いた状態にして表示
+    
         // faqアコーディオン
         $('.p-faq__q').on('click', function () {
             var $question = $(this);
             var $answer = $question.next('.p-faq__a');
-
+    
             // アコーディオンの開閉
             if ($answer.hasClass('open')) {
                 $answer.removeClass('open').slideUp();
@@ -16,12 +24,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
                 // 他のアコーディオンを閉じる場合
                 $('.p-faq__a.open').removeClass('open').slideUp();
                 $('.p-faq__q.open').removeClass('open');
-
+    
                 // 現在のアコーディオンを開く
                 $answer.addClass('open').slideDown();
                 $question.addClass('open');
             }
         });
+    });
+    
 
 
 

@@ -36,10 +36,11 @@
 .improvement__case{
     width: rem(360);
     height: rem(99.33);
-    margin: rem(30) auto 0;
+    margin: 0 auto ;
     @include mq(md) {
         width: rem(690);
         height: rem(197);
+        margin: rem(30) auto 0;
     }
 }
 
@@ -57,10 +58,11 @@
 .improvement__name{
     width: rem(218);
     height: rem(47);
-    margin: 0 auto;
+    margin: rem(15) auto 0;
     @include mq(md) {
         width: rem(548);
         height: rem(24);
+        margin: rem(30) auto 0;
     }
 }
 
@@ -70,7 +72,9 @@
     font-size: rem(15);
     font-weight: $bold;
     line-height: calc(30/15);
-    letter-spacing: 0.01em;
+    @include mq(md) {
+        letter-spacing: 0.01em;
+    }
 }
 
 
@@ -162,10 +166,11 @@
     color: $blue;
 	font-size: rem(20);
 	font-weight: $bold;
-	padding-bottom: 5px;
+	padding-bottom: rem(10);
     letter-spacing: 0.01em;
     @include mq(md) {
         font-size: rem(30);
+        padding-bottom: rem(5);
     }
 }
 
@@ -303,7 +308,10 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-	bottom: -8%;
+	bottom: -7%;
+    @include mq(md) {
+        bottom: -6%;
+    }
 }
 
 .swiper-pagination-bullet {

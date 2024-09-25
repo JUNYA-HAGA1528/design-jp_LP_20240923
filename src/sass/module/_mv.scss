@@ -17,8 +17,9 @@
     height: rem(118);
     margin: 0 auto;
     @include mq(md) {
-        width: rem(685);
-        height: rem(238);
+        bottom: -8%;
+        width: rem(695);
+        height: rem(250);
     }
 }
 
@@ -29,11 +30,12 @@
 	position: relative;
 	color: $white;
 	font-size: rem(26.41);
-	font-weight: $medium;
+	font-weight: $bold;
     line-height: calc(65.6/50);
     letter-spacing: 0.05em;
 	text-align: center;
     @include mq(md) {
+        
         margin-top: rem(80);
         font-size: rem(50);
     }
@@ -67,11 +69,11 @@
 .mv__wrapper{
     background-color: $white;
     border-radius: rem(8);
-    margin-top: rem(30);
+    margin-top: rem(20);
     padding: rem(8) 0 rem(16) ;
     position: relative;
     @include mq(md) {
-        margin-top: rem(46);
+        margin-top: rem(40);
         padding: rem(17) 0 rem(28.8) ;
     }
 }
@@ -159,7 +161,7 @@
 	background-size: contain;
 	content: "";
     position: absolute;
-    top: 51%;
+    top: 47%;
     right: 24px;
     width: rem(14);
 	height: rem(14);
@@ -169,6 +171,7 @@
         width: rem(36);
         height: rem(20);
         right: 36px;
+        top: 51%;
     }
 }
 
@@ -235,5 +238,12 @@
     padding: 0 rem(15) rem(30);
     @include mq(md) {
         padding: 0 rem(27) rem(50);
+    }
+}
+
+.mv__contact img {
+    margin-top: rem(-4);
+    @include mq(md) {
+        margin-top: rem(0);
     }
 }

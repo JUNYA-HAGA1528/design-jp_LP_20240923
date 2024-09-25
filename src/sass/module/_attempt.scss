@@ -18,7 +18,7 @@
     @include mq(md) {
         font-size: rem(30);
         font-weight: $bold;
-        line-height: calc(36/30);
+        line-height: calc(40/30);
     }
 }
 
@@ -46,10 +46,6 @@
     }
 }
 
-.attempt__comment{
-    margin-top: rem(5);
-}
-
 .attempt__list{
     margin-top: rem(10);
 }
@@ -67,8 +63,9 @@
     font-size: rem(15);
     font-weight: $bold;
     line-height: 2;
+    letter-spacing: 0.01em;
     @include mq(md) {
         font-family:$base-family ;
-        letter-spacing: 0.01em;
+        margin-top: rem(5);
     }
 }
