@@ -6,9 +6,11 @@
     margin-top: rem(30);
     text-align: center;
     padding: 0 rem(15);
+	padding-bottom: rem(30);
     @include mq(md) {
         margin-top: rem(80);
         padding: 0 rem(30);
+		padding-bottom: rem(50);
     }
 }
 
