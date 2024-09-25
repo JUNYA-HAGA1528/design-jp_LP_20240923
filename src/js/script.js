@@ -75,5 +75,37 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
         
 
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // ループさせる
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // autoplay: false にすることで自動スクロールは無効にする
+            autoplay: false, 
+        });
 
+
+
+
+          // 症例_スライド
+    var caseSwiper = new Swiper(".case__swiper", {
+        cssMode: true,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+        
 });
