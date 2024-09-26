@@ -41,16 +41,16 @@
 .reason__list{
     width: rem(359);
     height: rem(355);
-    margin: 0 auto;
+    margin: rem(10) auto 0;
     @include mq(md) {
-        width: rem(690);
-        height: rem(286);
+        width: rem(710);
+        height: rem(310);
         margin: rem(15) auto 0;
     }
 }
 
 .reason__part{
-    margin-top: rem(50);
+    margin-top: rem(40);
     background-color: #fff;
     @include mq(md) {
         margin-top: rem(30);

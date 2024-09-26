@@ -39,8 +39,25 @@
     margin: 0 auto ;
     @include mq(md) {
         width: rem(690);
-        height: rem(197);
+        height: rem(166);
         margin: rem(30) auto 0;
+    }
+}
+
+.worries__remarks{
+    text-align: left;
+    margin-top: rem(6);
+    font-size: rem(10.5);
+    font-weight: $regular;
+    line-height: calc(30/10.5);
+    letter-spacing: 0.01em;
+    padding: 0 rem(15);
+    @include mq(md) {
+        max-width: rem(500);
+        margin: rem(10) auto 0;
+        font-size: rem(12);
+        font-weight: $bold;
+        padding: 0;
     }
 }
 
@@ -70,9 +87,10 @@
     text-align: left;
     margin-top: rem(30);
     font-size: rem(15);
-    font-weight: $bold;
+    font-weight: $regular;
     line-height: calc(30/15);
     @include mq(md) {
+        font-weight: $bold;
         letter-spacing: 0.01em;
     }
 }
@@ -165,12 +183,13 @@
 	position: relative;
     color: $blue;
 	font-size: rem(20);
-	font-weight: $bold;
+	font-weight: $regular;
 	padding-bottom: rem(10);
     letter-spacing: 0.01em;
     @include mq(md) {
         font-size: rem(30);
         padding-bottom: rem(5);
+        font-weight: $bold;
     }
 }
 
@@ -178,13 +197,14 @@
 	position: relative;
     color: $black;
 	font-size: rem(15);
-	font-weight: $bold;
+	font-weight: $regular;
 	letter-spacing: 0.01em;
     line-height: 1.33;
     border-bottom: solid 1px $black;
     padding-bottom: rem(12);
     @include mq(md) {
         font-size: rem(30);
+        font-weight: $bold;
     }
 }
 
@@ -196,11 +216,12 @@
 	text-align: left;
     color: $black;
 	font-size: clamp(15px, 5vw, 15px);
-	font-weight: $bold;
+	font-weight: $regular;
 	letter-spacing: 0.01em;
     @include mq(md) {
         display: flex;
         align-items: center;
+        font-weight: $bold;
     }
 }
 
@@ -213,12 +234,13 @@
     margin-top: rem(30);
     color: $black;
 	font-size: clamp(15px, 5vw, 15px);
-	font-weight: $bold;
+	font-weight: $regular;
 	letter-spacing: 0.01em;
     line-height: 1.3;
     margin-left: auto;
     @include mq(md) {
         padding-top: rem(16);
+        font-weight: $bold;
         
     }
 }

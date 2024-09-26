@@ -125,12 +125,13 @@
     text-align: left;
     margin-top: rem(8);
     font-size: rem(18);
-    font-weight: $bold;
+    font-weight: $regular;
     line-height: calc(27.5/18);
     letter-spacing: 0.01em;
     @include mq("md") {
       font-size: rem(20);
       line-height: calc(30/20);
+      font-weight: $bold;
     }
   }
   
@@ -157,10 +158,11 @@
   text-align: left;
   margin-top: rem(20);
   font-size: rem(15);
-  font-weight: $bold;
+  font-weight: $regular;
   line-height: 2;
   letter-spacing: 0.01em;
   @include mq(md) {
       margin-top: rem(30);
+      font-weight: $bold;
   }
 }

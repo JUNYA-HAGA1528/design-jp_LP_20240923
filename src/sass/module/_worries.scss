@@ -216,11 +216,11 @@
 
 .worries__improvement-img-second{
     width: rem(390);
-    height: rem(220);
+    height: rem(200);
     margin: rem(20) auto 0;
     @include mq(md) {
         width: rem(500);
-        height: rem(283);
+        height: rem(256);
         margin: rem(50) auto 0;
     }
 }
