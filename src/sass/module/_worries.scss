@@ -67,16 +67,20 @@
 }
 
 .worries__title-img{
-    margin-top: rem(-20);
+    width: rem(291);
+    height: rem(174);
+    margin:rem(15) auto rem(20);
     @include mq(md) {
-        margin-top: rem(0);
+        width: rem(665);
+        height: rem(106);
+        margin: rem(40) auto;
     }
 }
 
 .worries__worsening-case{
     width: rem(360);
     height: rem(99.33);
-    margin: rem(-30) auto 0;
+    margin: 0 auto ;
     @include mq(md) {
         width: rem(690);
         height: rem(197);
