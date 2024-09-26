@@ -94,7 +94,10 @@
 
 .mv__price{
     width: 92%;
-    margin: 0 auto;
+    margin: rem(20) auto 0;
+    @include mq(md) {
+        margin: rem(40) auto 0;
+    }
 }
 
 .mv__link{
@@ -120,6 +123,10 @@
     justify-content: center; /* 水平方向の中央揃え */
     align-items: center; /* 垂直方向の中央揃え（必要なら） */
     text-align: center; /* インライン要素のテキスト中央揃え */
+    margin-top: rem(10);
+    @include mq(md) {
+        margin-top: rem(40);
+    }
 }
 
 .mv__button  {
