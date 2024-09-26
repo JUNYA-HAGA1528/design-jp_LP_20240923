@@ -1253,6 +1253,58 @@
         <!-------------- 
             読み込み
         ---------------->
+			<!-- clinicアコーディオン -->
+			<section id="clinic-info" class="section-wraper sec-back-lightblue">
+				<div class="p-inner">
+					<div class="only_sp">
+						<!-- <img class="only_sp" src="./img/footer-logo-skin.svg" alt="品川スキンクリニック 品川美容外科" width="300" height="138"
+							style="margin: 30px auto 0;"> -->
+						<div class="skin__img taC">
+							<img src="img/clinic_logo1.gif" alt="品川美容外科">
+						</div>
+						<div class="hours__text mT20">
+							<p>
+								<span>※品川美容外科でのご案内となります</span><br>
+								【受付時間】10:00～19:00 ※土日・祝日も対応<br>
+								品川本院･池袋院･新宿院･渋谷院･横浜院･梅田院･心斎橋院は 10:00～20:00まで
+							</p>
+						</div>
+						<!--------------------------------------------------------------　
+							↓↓ここからクリニック一覧　テンプレート　/lp/library/sp/clinic_skin.php↓↓ 
+							-------------------------------------------------------------->
+						<div id="clinic-content01" class="mT50">
+							<?php
+								$url = 'template/sp/clinic_biyou.php';
+								$contents = file_get_contents($url);
+								echo $contents;
+								?>
+						</div>
+						<!--　↑↑ここからクリニック一覧　テンプレート　/lp/library/sp/clinic_skin.php↑↑ -->
+
+						<!-- <img id="container" class="only_sp" src="./img/footer-logo-biyou.svg" alt="品川スキンクリニック 品川美容外科" width="300"
+							height="122" style="margin: 30px auto 0;"> -->
+						<div class="biyou__img taC mT50">
+							<img src="img/header-logo.png" alt="品川スキンクリニック">
+						</div>
+						<div class="hours__text mT20">
+							<p>
+								【受付時間】10:00～19:00 ※土日・祝日も対応<br>
+								品川本院･池袋院･新宿院･渋谷院･横浜院･千葉院･梅田院は 10:00～20:00まで
+							</p>
+						</div>
+						<!--------------------------------------------------------------　
+							↓↓ここからクリニック一覧　テンプレート　/lp/library/sp/clinic_biyou.php↓↓ 
+							-------------------------------------------------------------->
+						<div id="clinic-content02" class="mT50">
+							<?php
+								$url = 'template/sp/clinic_skin.php';
+								$contents = file_get_contents($url);
+								echo $contents;
+								?>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
 
@@ -1272,7 +1324,6 @@
 
 
 
-        
 
 
 
